@@ -13,3 +13,7 @@ window.addEventListener('beforeinstallprompt', () => {
     event.preventDefault();
     return false;
 });
+
+var promise = new Promise((res, rej) => {
+
+});
