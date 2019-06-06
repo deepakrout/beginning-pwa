@@ -17,3 +17,5 @@ window.addEventListener('beforeinstallprompt', () => {
 var promise = new Promise((res, rej) => {
 
 });
+
+fetch();
