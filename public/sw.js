@@ -18,3 +18,5 @@ self.addEventListener('fetch', (event) => {
     console.log(`[Service Worker] Fetching something...`, event);
     event.respondWith(fetch(event.request));
 });
+
+//TODO: cache more items below
