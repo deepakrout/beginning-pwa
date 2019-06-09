@@ -8,12 +8,13 @@ self.addEventListener('install', (event) => {
         })
     )
 });
-
+// Activating Service Worker Code 
 self.addEventListener('activate', (event) => {
     console.log(`[Service Worker] Activating Service Worker`, event);
     return self.clients.claim();
 });
 
+// Fetch event code 
 self.addEventListener('fetch', (event) => {
     console.log(`[Service Worker] Fetching something...`, event);
     event.respondWith(fetch(event.request));
