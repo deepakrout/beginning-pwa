@@ -21,3 +21,5 @@ self.addEventListener('fetch', (event) => {
 });
 
 //TODO: cache more items below
+
+// TODO: add code for restoring from cache
