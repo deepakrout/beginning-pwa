@@ -23,3 +23,5 @@ self.addEventListener('fetch', (event) => {
 //TODO: cache more items below
 
 // TODO: add code for restoring from cache
+
+// TODO: Complete the caching and offline capability
