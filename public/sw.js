@@ -1,3 +1,5 @@
+// Executed when the app is installed
+
 self.addEventListener('install', (event) => {
     console.log(`[Service Worker] Installing Service Worker`, event);
     event.waitUntil(
@@ -8,7 +10,8 @@ self.addEventListener('install', (event) => {
         })
     )
 });
-// Activating Service Worker Code 
+
+// Activating Service Worker Code. Previous Service worker may be running 
 self.addEventListener('activate', (event) => {
     console.log(`[Service Worker] Activating Service Worker`, event);
     return self.clients.claim();
